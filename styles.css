@@ -3,8 +3,6 @@
    ========================= */
 body {
     margin-top: 107px; /* Modifica questo valore in base all'altezza effettiva del tuo header */
-      font-family: 'Poppins', sans-serif; /* Cambia font in Poppins */
-    font-weight: 300; /* Imposta il peso Thin 100 per i testi e il burger menu */
     background-color: #fffdfa;
 }
 
@@ -44,7 +42,7 @@ body {
     text-align: center; /* Allinea il testo del titolo al centro */
     flex: 1; /* Fa sì che il titolo occupi lo spazio disponibile per centrarlo */
       font-family: 'Poppins', sans-serif; /* Cambia font in Poppins */
-    font-weight: 400; /* Imposta il peso Regular 400 per il titolo */
+    font-weight: 500; /* Imposta il peso Regular 400 per il titolo */
 }
 
 .home-link {
@@ -157,7 +155,7 @@ body {
 }
 
 .nav-menu ul li a {
-      font-family: 'Poppins', sans-serif; /* Cambia font in Poppins */
+      font-family: 'Quicksand', sans-serif; /* Cambia font in Poppins */
     font-weight: 100; /* Imposta il peso Thin 100 per il menu burger */
     display: block; /* Trasforma l'elemento <a> in un blocco per occupare tutta la larghezza */
     width: 100%; /* Assicura che lo sfondo si estenda su tutta la larghezza del contenitore */
@@ -330,7 +328,8 @@ body {
     background: linear-gradient(180deg, #f98516, #ea6a0c); /* Mantieni il gradiente */
     color: #fff7e9; /* Testo ''prenota ora'' */
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
     font-size: 1.1rem;
     padding: 12px 30px; /* Aggiusta il padding per un look più pulito */
     border: none; /* Rimuovi il bordo */
@@ -426,7 +425,7 @@ body {
 
 /* Card heading styles */
 .card h2, .casa-info-card h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 300;
     font-size: 1.5rem;
     color: #431907;
@@ -434,7 +433,7 @@ body {
 
 /* Card paragraph styles */
 .card p, .casa-info-card p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 250;
     font-size: 1rem;
     color: #ea6a0c;
@@ -475,7 +474,7 @@ body {
 }
 
 .service-item p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 300;
     font-size: 1rem;
     color: #ea6a0c; /* Colore del testo */
@@ -487,8 +486,8 @@ body {
 
 /* Stili per i pulsanti "Info" nelle card */
 .card-info-button {
-    font-family: 'Poppins', sans-serif; /* Stesso font del burger menu */
-    font-weight: 300; /* Peso leggero per lo stile sobrio */
+    font-family: 'Quicksand', sans-serif; /* Stesso font del burger menu */
+    font-weight: 500; /* Peso leggero per lo stile sobrio */
     display: inline-block; /* Per gestire padding e margini correttamente */
     text-decoration: none; /* Rimuove la sottolineatura del link */
     color: #ea6a0c; /* Colore simile al testo del burger menu */
@@ -513,7 +512,7 @@ body {
 /* Giustifica il testo all'interno delle card */
 .card p {
     text-align: justify; /* Giustifica il testo delle card */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 250; /* Usa lo stesso peso leggero per mantenere coerenza con il design */
     color: #21252b; /* Colore del testo */
 }
@@ -570,7 +569,7 @@ body {
     background-color: #fafafa; /* Colore di sfondo simile al menu */
     color: #5F6A74; /* Colore del testo come il menu */
     border: 1px solid #5F6A74; /* Bordo simile al menu */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 300;
     text-align: center;
     padding: 10px 20px;
@@ -662,14 +661,14 @@ body {
 }
 
 .gallery-section h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     font-size: 2rem;
     margin-bottom: 30px;
 }
 
 .gallery-section h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 300;
     font-size: 1.8rem;
     margin: 20px 0;
@@ -851,19 +850,19 @@ body {
 /* Aggiungi le media queries per mobile */
 @media (max-width: 768px) {
     .site-title {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Quicksand', sans-serif;
         font-weight: 400; /* Assicura che il titolo abbia Poppins Regular 400 su mobile */
         font-size: 1.5rem; /* Regola la dimensione del font per adattarsi a schermi più piccoli */
     }
 
     .card h2 {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 317; /* Assicura che il titolo delle card usi Poppins Light 300 su mobile */
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700; /* Assicura che il titolo delle card usi Poppins Light 300 su mobile */
         font-size: 1.3rem; /* Riduce leggermente la dimensione per il titolo delle card su mobile */
     }
 
     .card p {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Quicksand', sans-serif;
         font-weight: 300; /* Cambia a Poppins ExtraLight 200 per migliorare la leggibilità */
         font-size: 0.9rem; /* Riduce leggermente la dimensione del testo su mobile */
         text-align: justify; /* Giustifica il testo */
@@ -871,7 +870,7 @@ body {
     }
 
     .nav-menu ul li a {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Quicksand', sans-serif;
         font-weight: 300; /* Cambia a Poppins ExtraLight 200 per migliorare la leggibilità del menu */
         font-size: 1rem; /* Imposta una dimensione comoda per il menu su mobile */
         text-align: justify; /* Giustifica il testo */
