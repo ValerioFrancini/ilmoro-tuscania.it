@@ -2,9 +2,10 @@
       BODY STYLES
    ========================= */
 body {
-    margin-top: 132.5px; /* Modifica questo valore in base all'altezza effettiva del tuo header */
+    margin-top: 107px; /* Modifica questo valore in base all'altezza effettiva del tuo header */
       font-family: 'Poppins', sans-serif; /* Cambia font in Poppins */
     font-weight: 300; /* Imposta il peso Thin 100 per i testi e il burger menu */
+    background-color: #faf6f8;
 }
 
 /* =========================
@@ -14,12 +15,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Distribuisce il logo e il titolo correttamente */
-    background-color: #ffffff;
+    background-color: #faf6f8;
     border-radius: 5px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    
     position: fixed;
     top: 0; /* Posiziona l'header in cima alla pagina */
-    width: 99%; /* Assicura che l'header occupi tutta la larghezza */
+    width: 100%; /* Assicura che l'header occupi tutta la larghezza */
     z-index: 1500; /* Assicura che l'header sia sempre sopra gli altri elementi della pagina */
 }
 
@@ -38,7 +39,7 @@ body {
 
 .site-title {
     font-size: 1.8rem; /* Regola la dimensione del titolo per renderlo ben visibile */
-    color: #2c3e50;
+    color: #312028;
     margin: 0 auto; /* Utilizza margini automatici per centrare il titolo */
     text-align: center; /* Allinea il testo del titolo al centro */
     flex: 1; /* Fa sì che il titolo occupi lo spazio disponibile per centrarlo */
@@ -62,7 +63,7 @@ body {
     .header {
         display: flex;
         justify-content: center; /* Centra tutto il contenuto all'interno dell'header */
-        width: 96%; /* Assicura che l'header occupi tutta la larghezza */
+        width: 99%; /* Assicura che l'header occupi tutta la larghezza */
     }
 
     .logo-title {
@@ -101,7 +102,7 @@ body {
 .burger-menu .line {
     width: 37px;
     height: 2px;
-    background-color: #2c3e50;
+    background-color: #312028;
     margin: 3px 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -163,7 +164,7 @@ body {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 1.1rem;
-    color: #5F6A74; /* Colore del testo in Grigio-blu scuro, come il titolo */
+    color: #456550; 
     background-color: transparent; /* Sfondo trasparente di default */
     border-radius: 12px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -293,7 +294,7 @@ body {
     width: 6px; /* Dimensione del puntino */
     height: 6px; /* Altezza del puntino */
     margin: 0 3.5px; /* Spazio tra i puntini */
-    background-color: #EFE2CC; /* Beige chiaro per i puntini inattivi */
+    background-color: #dde6ea; /* Beige chiaro per i puntini inattivi */
     border-radius: 50%; /* Rende i puntini rotondi */
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -301,7 +302,7 @@ body {
 }
 
 .dot.active {
-    background-color: #B9A890; /* Taupe tenue per i puntini attivi */
+    background-color: #456550; /* Taupe tenue per i puntini attivi */
 }
 
 
@@ -326,7 +327,7 @@ body {
 
 /* Stile del pulsante Airbnb */
 .airbnb-button, .airbnb-button-mobile {
-    background: linear-gradient(135deg, #FF4E50, #FF6B6B); /* Mantieni il gradiente */
+    background: linear-gradient(135deg, #c7a5af, #976778); /* Mantieni il gradiente */
     color: white; /* Testo bianco per contrasto */
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
@@ -394,7 +395,7 @@ body {
 
 /* Card base styles */
 .card, .casa-info-card {
-    background-color: #ffffff;
+    background-color: #ecdfe3;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 20px;
@@ -428,7 +429,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 1.5rem;
-    color: #2c3e50;
+    color: #312028;
 }
 
 /* Card paragraph styles */
@@ -436,7 +437,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 250;
     font-size: 1rem;
-    color: #5F6A74;
+    color: #5c3f4c;
     text-align: justify;
     word-wrap: break-word;
     height: auto;
@@ -469,7 +470,7 @@ body {
 
 .service-item i {
     font-size: 1.5rem; /* Dimensione delle icone */
-    color: #2c3e50; /* Colore delle icone */
+    color: #5c3f4c; /* Colore delle icone */
     margin-bottom: 10px; /* Spazio sotto l'icona */
 }
 
@@ -477,7 +478,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 1rem;
-    color: #000000; /* Colore del testo */
+    color: #5c3f4c; /* Colore del testo */
 }
 
 
@@ -490,9 +491,9 @@ body {
     font-weight: 300; /* Peso leggero per lo stile sobrio */
     display: inline-block; /* Per gestire padding e margini correttamente */
     text-decoration: none; /* Rimuove la sottolineatura del link */
-    color: #5F6A74; /* Colore simile al testo del burger menu */
+    color: #312028; /* Colore simile al testo del burger menu */
     background-color: transparent; /* Sfondo trasparente di default */
-    border: 1px solid #5F6A74; /* Aggiunge un bordo sottile */
+    border: 1px solid #312028; /* Aggiunge un bordo sottile */
     border-radius: 8px; /* Arrotonda leggermente i bordi per un look sobrio */
     padding: 8px 15px; /* Padding per rendere il pulsante comodo da cliccare */
     margin-top: 20px; /* Aggiunge spazio tra il pulsante e il testo */
@@ -514,7 +515,7 @@ body {
     text-align: justify; /* Giustifica il testo delle card */
     font-family: 'Poppins', sans-serif;
     font-weight: 250; /* Usa lo stesso peso leggero per mantenere coerenza con il design */
-    color: #5F6A74; /* Colore del testo */
+    color: #312028; /* Colore del testo */
 }
 
 /* Effetto hover per i pulsanti delle card */
@@ -712,10 +713,10 @@ body {
     align-items: center;
     justify-content: center;
     gap: 40px;
-    background-color: #fff;
+    background-color: #faf6f8;
     padding: 13px 36px;
     border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px #6a4756df;
     z-index: 1000;
   }
   
@@ -794,7 +795,7 @@ body {
    FOOTER STYLES
    ========================= */
 .footer {
-    background-color: #2c3e50;
+    background-color: #6a4756;
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
