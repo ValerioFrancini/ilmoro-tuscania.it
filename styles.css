@@ -713,7 +713,7 @@ body {
     justify-content: center;
     gap: 40px;
     background-color: #fff;
-    padding: 15px 20px;
+    padding: 13px 36px;
     border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -735,8 +735,8 @@ body {
     top: 0; /* Si allinea con l'icona */
     left: 50%;
     transform: translate(-50%, 0);
-    width: 34px; /* Dimensione del cerchio */
-    height: 34px;
+    width: 44px; /* Dimensione del cerchio */
+    height: 44px;
     background-color: #e0e0e0; /* Colore grigio chiaro */
     border-radius: 50%; /* Cerchio perfetto */
     z-index: -1; /* Va sotto l'icona */
@@ -758,7 +758,7 @@ body {
 
   /* Stile per le etichette sotto i tab */
   .tab-label {
-    margin-top: 8px; /* Distanza tra icona e testo */
+    margin-top: 4px; /* Distanza tra icona e testo */
     font-size: 14px;
     color: #333;
     pointer-events: none; /* Il testo rimane statico */
@@ -783,6 +783,7 @@ body {
 
     .tab-label {
         font-size: 8px;
+        margin-top: 2px;
     }
   }
 
