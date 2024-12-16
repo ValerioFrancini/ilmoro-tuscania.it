@@ -327,7 +327,7 @@ body {
 
 /* Stile del pulsante Airbnb */
 .airbnb-button, .airbnb-button-mobile {
-    background: linear-gradient(135deg, #c7a5af, #976778); /* Mantieni il gradiente */
+    background: linear-gradient(135deg, #b08392, #5c3f4c); /* Mantieni il gradiente */
     color: white; /* Testo bianco per contrasto */
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
