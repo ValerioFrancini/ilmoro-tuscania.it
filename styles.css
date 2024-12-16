@@ -770,7 +770,7 @@ body {
   @media (max-width: 768px) {
     .navigation-card {
       gap: 26px; /* Riduce lo spazio tra i tab */
-      padding: 10px 26px;
+      padding: 15px 36px;
     }
   
     .tab {
