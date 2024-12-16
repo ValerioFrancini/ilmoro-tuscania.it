@@ -715,7 +715,7 @@ body {
     background-color: #fff;
     padding: 13px 36px;
     border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     z-index: 1000;
   }
   
