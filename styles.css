@@ -5,7 +5,7 @@ body {
     margin-top: 107px; /* Modifica questo valore in base all'altezza effettiva del tuo header */
       font-family: 'Poppins', sans-serif; /* Cambia font in Poppins */
     font-weight: 300; /* Imposta il peso Thin 100 per i testi e il burger menu */
-    background-color: #faf6f8;
+    background-color: #fffdfa;
 }
 
 /* =========================
@@ -15,7 +15,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Distribuisce il logo e il titolo correttamente */
-    background-color: #faf6f8;
+    background-color: #fffdfa;
     border-radius: 5px;
     
     position: fixed;
@@ -39,7 +39,7 @@ body {
 
 .site-title {
     font-size: 1.8rem; /* Regola la dimensione del titolo per renderlo ben visibile */
-    color: #312028;
+    color: #431907;
     margin: 0 auto; /* Utilizza margini automatici per centrare il titolo */
     text-align: center; /* Allinea il testo del titolo al centro */
     flex: 1; /* Fa sì che il titolo occupi lo spazio disponibile per centrarlo */
@@ -102,7 +102,7 @@ body {
 .burger-menu .line {
     width: 37px;
     height: 2px;
-    background-color: #312028;
+    background-color: #431907;
     margin: 3px 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -136,7 +136,7 @@ body {
     position: absolute;
     top: 90px;
     right: 12px;
-    background-color: #fafafa; /* Sfondo del menu */
+    background-color: #fff7e9; /* Sfondo del menu */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 7px;
     padding: 15px;
@@ -164,7 +164,7 @@ body {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 1.1rem;
-    color: #456550; 
+    color: #431407; 
     background-color: transparent; /* Sfondo trasparente di default */
     border-radius: 12px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -172,8 +172,8 @@ body {
 
 /* Hover effect for menu items */
 .nav-menu ul li a:hover {
-    background-color: #EFE2CC; /* Beige chiaro per l'hover */
-    color: #5F6A74; /* Mantieni il colore Grigio-blu scuro del titolo per il testo */
+    background-color: #fedeaa; /* Beige chiaro per l'hover */
+    color: #431407; /* Mantieni il colore Grigio-blu scuro del titolo per il testo */
 }
 
 /* Active state for clicked menu items */
@@ -294,7 +294,7 @@ body {
     width: 6px; /* Dimensione del puntino */
     height: 6px; /* Altezza del puntino */
     margin: 0 3.5px; /* Spazio tra i puntini */
-    background-color: #dde6ea; /* Beige chiaro per i puntini inattivi */
+    background-color: #fff7e9; /* Beige chiaro per i puntini inattivi */
     border-radius: 50%; /* Rende i puntini rotondi */
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -302,7 +302,7 @@ body {
 }
 
 .dot.active {
-    background-color: #456550; /* Taupe tenue per i puntini attivi */
+    background-color: #fba13c; /* Taupe tenue per i puntini attivi */
 }
 
 
@@ -327,24 +327,24 @@ body {
 
 /* Stile del pulsante Airbnb */
 .airbnb-button, .airbnb-button-mobile {
-    background: linear-gradient(135deg, #976778, #b08392, #6a4756); /* Mantieni il gradiente */
-    color: white; /* Testo bianco per contrasto */
+    background: linear-gradient(180deg, #f98516, #ea6a0c); /* Mantieni il gradiente */
+    color: #fff7e9; /* Testo ''prenota ora'' */
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-size: 1.1rem;
     padding: 12px 30px; /* Aggiusta il padding per un look più pulito */
     border: none; /* Rimuovi il bordo */
     border-radius: 10px; /* Mantieni la stondatura del pulsante */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombra leggera per profondità */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombra leggera per profondità */
     transition: background 0.3s ease, transform 0.2s ease;
     text-align: center;
 }
 
 /* Hover effect per desktop */
 .airbnb-button:hover {
-    background: linear-gradient(135deg, #FF6B6B, #FF4E50);
+    background: linear-gradient(180deg, #ea6a0c, #c2500c);
     transform: translateY(-3px); /* Leggero sollevamento al passaggio del mouse */
-    box-shadow: 0 8px 20px rgba(255, 110, 110, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Nascondi il pulsante nel slider su mobile */
@@ -395,8 +395,8 @@ body {
 
 /* Card base styles */
 .card, .casa-info-card {
-    background-color: #ecdfe3;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fedeaa;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     padding: 20px;
     text-align: center;
@@ -429,7 +429,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 1.5rem;
-    color: #312028;
+    color: #431907;
 }
 
 /* Card paragraph styles */
@@ -437,7 +437,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 250;
     font-size: 1rem;
-    color: #5c3f4c;
+    color: #ea6a0c;
     text-align: justify;
     word-wrap: break-word;
     height: auto;
@@ -470,7 +470,7 @@ body {
 
 .service-item i {
     font-size: 1.5rem; /* Dimensione delle icone */
-    color: #5c3f4c; /* Colore delle icone */
+    color: #ea6a0c; /* Colore delle icone */
     margin-bottom: 10px; /* Spazio sotto l'icona */
 }
 
@@ -478,7 +478,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 1rem;
-    color: #5c3f4c; /* Colore del testo */
+    color: #ea6a0c; /* Colore del testo */
 }
 
 
@@ -491,9 +491,9 @@ body {
     font-weight: 300; /* Peso leggero per lo stile sobrio */
     display: inline-block; /* Per gestire padding e margini correttamente */
     text-decoration: none; /* Rimuove la sottolineatura del link */
-    color: #312028; /* Colore simile al testo del burger menu */
+    color: #ea6a0c; /* Colore simile al testo del burger menu */
     background-color: transparent; /* Sfondo trasparente di default */
-    border: 1px solid #312028; /* Aggiunge un bordo sottile */
+    border: 1px solid #21252b; /* Aggiunge un bordo sottile */
     border-radius: 8px; /* Arrotonda leggermente i bordi per un look sobrio */
     padding: 8px 15px; /* Padding per rendere il pulsante comodo da cliccare */
     margin-top: 20px; /* Aggiunge spazio tra il pulsante e il testo */
@@ -515,7 +515,7 @@ body {
     text-align: justify; /* Giustifica il testo delle card */
     font-family: 'Poppins', sans-serif;
     font-weight: 250; /* Usa lo stesso peso leggero per mantenere coerenza con il design */
-    color: #312028; /* Colore del testo */
+    color: #21252b; /* Colore del testo */
 }
 
 /* Effetto hover per i pulsanti delle card */
@@ -717,6 +717,7 @@ body {
     padding: 13px 36px;
     border-radius: 50px;
     box-shadow: 0 4px 8px #6a4756df;
+    border: 1px solid #ea6a0c;
     z-index: 1000;
   }
   
@@ -761,7 +762,7 @@ body {
   .tab-label {
     margin-top: 4px; /* Distanza tra icona e testo */
     font-size: 14px;
-    color: #333;
+    color: #431907;
     pointer-events: none; /* Il testo rimane statico */
   }
   
@@ -795,7 +796,7 @@ body {
    FOOTER STYLES
    ========================= */
 .footer {
-    background-color: #6a4756;
+    background-color: #431907;
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
