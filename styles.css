@@ -713,7 +713,7 @@ body {
     justify-content: center;
     gap: 40px;
     background-color: #fff;
-    padding: 13px 37px;
+    padding: 15px 20px;
     border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -724,33 +724,44 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-decoration: none; /* Rimuove ogni sottolineatura */
+    text-decoration: none;
     cursor: pointer;
+    position: relative; /* Necessario per il cerchio */
+  }
+  
+  .tab:hover::before {
+    content: "";
+    position: absolute;
+    top: 0; /* Si allinea con l'icona */
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 34px; /* Dimensione del cerchio */
+    height: 34px;
+    background-color: #e0e0e0; /* Colore grigio chiaro */
+    border-radius: 50%; /* Cerchio perfetto */
+    z-index: -1; /* Va sotto l'icona */
   }
   
   .tab:hover .svgIcon {
-    transform: scale(1.1); /* Ingrandisce solo l'icona al passaggio */
+    transform: scale(1.1); /* Effetto ingrandimento */
     transition: transform 0.2s ease;
-  }
-  
-  .tab:hover .tab-label {
-    color: inherit; /* Nessun cambio di colore del testo */
   }
   
   .svgIcon {
     width: 35px;
     height: 35px;
-    transition: transform 0.2s ease; /* Aggiunge una transizione fluida */
+    transition: transform 0.2s ease;
+    z-index: 1; /* Mantiene l'icona sopra il cerchio */
   }
+  
 
 
   /* Stile per le etichette sotto i tab */
   .tab-label {
-    margin-top: 3px;
-    font-size: 8px;
+    margin-top: 8px; /* Distanza tra icona e testo */
+    font-size: 14px;
     color: #333;
-    text-decoration: none; /* Rimuove sottolineatura dai testi */
-    pointer-events: none; /* Rende il testo "non cliccabile" */
+    pointer-events: none; /* Il testo rimane statico */
   }
   
   /* Responsività per dispositivi mobili */
@@ -768,6 +779,10 @@ body {
     .svgIcon {
       width: 30px;
       height: 30px;
+    }
+
+    .tab-label {
+        font-size: 8px;
     }
   }
 
