@@ -86,14 +86,14 @@ body {
     align-items: center;
     padding: 10px;
     position: absolute; /* Imposta la posizione del burger menu */
-    right: 50px; /* Posiziona il menu a 20px dal bordo destro */
-    top: 33px; /* Posiziona il menu a 40px dall'alto */
+    right: 50px; /* bordo destro */
+    top: 33px; /* dall'alto */
     z-index: 1001;
 }
 
 @media (max-width: 768px) {
     .burger-menu {
-        top: 37px; /* Adjusts the vertical position of the burger menu */
+        top: 31px; /* Adjusts the vertical position of the burger menu */
         right: 18px; /* Adjusts the horizontal position of the burger menu */
     }
 }
@@ -136,7 +136,7 @@ body {
     position: absolute;
     top: 90px;
     right: 12px;
-    background-color: #fff7e9; /* Sfondo del menu */
+    background-color: #fffdfa; /* Sfondo del menu */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 7px;
     padding: 15px;
@@ -395,7 +395,7 @@ body {
 
 /* Card base styles */
 .card, .casa-info-card {
-    background-color: #fedeaa;
+    background-color: #fef9f2;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     padding: 20px;
