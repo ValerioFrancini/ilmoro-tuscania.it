@@ -325,7 +325,7 @@ body {
 
 /* Stile del pulsante Airbnb */
 .airbnb-button, .airbnb-button-mobile {
-    background: linear-gradient(180deg, #fc983be0, #ea690c); /* Mantieni il gradiente */
+    background: linear-gradient(180deg, #ff9e43, #ea690c); /* Mantieni il gradiente */
     color: #fff7e9; /* Testo ''prenota ora'' */
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
@@ -860,13 +860,13 @@ body {
 
     .card h2 {
         font-family: 'Work Sans', sans-serif;
-        font-weight: 600; /* Assicura che il titolo delle card usi Poppins Light 300 su mobile */
+        font-weight: 400; /* Assicura che il titolo delle card usi Poppins Light 300 su mobile */
         font-size: 1.3rem; /* Riduce leggermente la dimensione per il titolo delle card su mobile */
     }
 
     .card p {
         font-family: 'Poppins', sans-serif;
-        font-weight: 300; /* Cambia a Poppins ExtraLight 200 per migliorare la leggibilità */
+        font-weight: 200; /* Cambia a Poppins ExtraLight 200 per migliorare la leggibilità */
         font-size: 0.9rem; /* Riduce leggermente la dimensione del testo su mobile */
         text-align: justify; /* Giustifica il testo */
 }
