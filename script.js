@@ -138,17 +138,30 @@ const header = document.querySelector('.header');
 
 // Funzione per mostrare/nascondere l'header in base allo scroll
 function handleScroll() {
-    if (window.scrollY > lastScrollY) {
-        // Scrolling verso il basso: nascondi l'header
+    const currentScrollY = window.scrollY; // Posizione attuale dello scroll
+
+    // Evita cambiamenti allo stato dell'header se sei completamente in cima alla pagina
+    if (currentScrollY <= 0) {
+        header.classList.remove('hidden');
+        header.classList.add('visible');
+        return;
+    }
+
+    // Logica per nascondere/mostrare l'header in base alla direzione dello scroll
+    if (currentScrollY > lastScrollY) {
+        // Scorrimento verso il basso: nascondi l'header
         header.classList.remove('visible');
         header.classList.add('hidden');
     } else {
-        // Scrolling verso l'alto: mostra l'header
+        // Scorrimento verso l'alto: mostra l'header
         header.classList.remove('hidden');
         header.classList.add('visible');
     }
-    lastScrollY = window.scrollY; // Aggiorna la posizione dello scroll
+
+    // Aggiorna l'ultimo valore dello scroll
+    lastScrollY = currentScrollY;
 }
+
 
 // Aggiungi un listener per l'evento scroll
 window.addEventListener('scroll', handleScroll);
