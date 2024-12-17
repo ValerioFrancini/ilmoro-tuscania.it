@@ -761,7 +761,7 @@ body {
   .tab-label {
     margin-top: 4px; /* Distanza tra icona e testo */
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px;
     color: #431907;
     pointer-events: none; /* Il testo rimane statico */
@@ -860,7 +860,7 @@ body {
 
     .card h2 {
         font-family: 'Work Sans', sans-serif;
-        font-weight: 700; /* Assicura che il titolo delle card usi Poppins Light 300 su mobile */
+        font-weight: 600; /* Assicura che il titolo delle card usi Poppins Light 300 su mobile */
         font-size: 1.3rem; /* Riduce leggermente la dimensione per il titolo delle card su mobile */
     }
 
