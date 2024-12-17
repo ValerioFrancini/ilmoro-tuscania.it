@@ -14,12 +14,22 @@ body {
     align-items: center;
     justify-content: space-between; /* Distribuisce il logo e il titolo correttamente */
     background-color: #fffdfa;
-    border-radius: 5px;
-    
+    border-radius: 5px; 
     position: fixed;
     top: 0; /* Posiziona l'header in cima alla pagina */
     width: 100%; /* Assicura che l'header occupi tutta la larghezza */
     z-index: 1500; /* Assicura che l'header sia sempre sopra gli altri elementi della pagina */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.header.hidden {
+    transform: translateY(-100%); /* Nasconde l'header spostandolo fuori schermo */
+    opacity: 0; /* Rende l'header invisibile */
+}
+
+.header.visible {
+    transform: translateY(0); /* Mostra l'header riportandolo in posizione */
+    opacity: 1; /* Rende l'header visibile */
 }
 
 

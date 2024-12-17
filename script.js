@@ -129,3 +129,31 @@ window.addEventListener('scroll', function() {
     }
 });
 
+
+
+
+// Variabili per tracciare lo stato dello scroll
+let lastScrollY = window.scrollY;
+const header = document.querySelector('.header');
+
+// Funzione per mostrare/nascondere l'header in base allo scroll
+function handleScroll() {
+    if (window.scrollY > lastScrollY) {
+        // Scrolling verso il basso: nascondi l'header
+        header.classList.remove('visible');
+        header.classList.add('hidden');
+    } else {
+        // Scrolling verso l'alto: mostra l'header
+        header.classList.remove('hidden');
+        header.classList.add('visible');
+    }
+    lastScrollY = window.scrollY; // Aggiorna la posizione dello scroll
+}
+
+// Aggiungi un listener per l'evento scroll
+window.addEventListener('scroll', handleScroll);
+
+// Inizializza l'header come visibile
+header.classList.add('visible');
+
+
