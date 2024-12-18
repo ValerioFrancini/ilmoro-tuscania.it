@@ -832,7 +832,7 @@ body {
   .tab-label {
     margin-top: 4px; /* Distanza tra icona e testo */
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     color: #431907;
     pointer-events: none; /* Il testo rimane statico */
@@ -841,8 +841,8 @@ body {
   /* Responsività per dispositivi mobili */
   @media (max-width: 768px) {
     .navigation-card {
-      gap: 26px; /* Riduce lo spazio tra i tab */
-      padding: 13px 36px;
+      gap: 30px; /* Riduce lo spazio tra i tab */
+      padding: 13px 35px;
     }
   
     .tab {
@@ -851,12 +851,12 @@ body {
     }
   
     .svgIcon {
-      width: 30px;
-      height: 30px;
+      width: 32px;
+      height: 32px;
     }
 
     .tab-label {
-        font-size: 8px;
+        font-size: 10px;
         margin-top: 2px;
     }
   }
