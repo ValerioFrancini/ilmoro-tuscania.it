@@ -403,7 +403,7 @@ body {
     font-size: 1.1rem;
     padding: 12px 30px; /* Aggiusta il padding per un look più pulito */
     border: none; /* Rimuovi il bordo */
-    border-radius: 10px; /* Mantieni la stondatura del pulsante */
+    border-radius: 50px; /* Mantieni la stondatura del pulsante */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombra leggera per profondità */
     transition: background 0.3s ease, transform 0.2s ease;
     text-align: center;
@@ -433,18 +433,19 @@ body {
 @media (max-width: 768px) {
     .airbnb-button-mobile {
         display: block; /* Mostra il pulsante su mobile */
-        width: 83%; /* Larghezza simile a quella del contenitore slider */
+        width: 53%; /* Larghezza simile a quella del contenitore slider */
         font-size: 1rem;
         padding: 12px 24px;
         margin: 20px auto; /* Centra il pulsante orizzontalmente e aggiunge margine sopra/sotto */
-        max-width: 400px; /* Imposta una larghezza massima per evitare che diventi troppo largo */
+        max-width: 200px; /* Imposta una larghezza massima per evitare che diventi troppo largo */
         text-align: center; /* Assicura che il testo all'interno sia centrato */
+        border-radius: 50px;
     }
 }
 
 /* Regola la distanza tra il pulsante e lo slider */
 .airbnb-button-mobile {
-    margin-top: 13px; /* Aggiusta questo valore per aumentare o ridurre la distanza */
+    margin-top: 17px; /* Aggiusta questo valore per aumentare o ridurre la distanza */
     margin-bottom: 13px;
 }
 
