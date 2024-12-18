@@ -841,7 +841,7 @@ body {
   /* Responsività per dispositivi mobili */
   @media (max-width: 768px) {
     .navigation-card {
-      gap: 30px; /* Riduce lo spazio tra i tab */
+      gap: 34px; /* Riduce lo spazio tra i tab */
       padding: 13px 35px;
     }
   
