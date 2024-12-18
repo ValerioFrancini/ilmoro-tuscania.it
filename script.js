@@ -170,3 +170,20 @@ window.addEventListener('scroll', handleScroll);
 header.classList.add('visible');
 
 
+
+//nav menu orizzontale
+document.querySelectorAll('.menu-list a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault(); // Previene il comportamento di default del link
+        const targetId = this.getAttribute('href'); // Ottiene l'ID della sezione di destinazione
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 100, // Scorre fino alla sezione con un offset
+                behavior: 'smooth' // Effetto di scorrimento fluido
+            });
+        }
+    });
+});
+
