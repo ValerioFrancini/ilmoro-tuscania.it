@@ -399,6 +399,37 @@ body {
 
 
 
+
+/* =========================
+   Testi semplici
+========================= */
+
+.info-text {
+    font-family: 'Work Sans', sans-serif; /* Font armonizzato con il resto del sito */
+    font-weight: 300; /* Peso leggero */
+    color: #431907; /* Colore del testo */
+    margin: 20px 25px; /* Centra il contenitore con margini */
+    max-width: 800px; /* Limita la larghezza del testo per leggibilità */
+    text-align: justify; /* Giustifica il testo */
+    line-height: 1.6; /* Migliora la spaziatura tra le righe */
+}
+
+.info-text h2 {
+    display: none;
+    font-weight: 400; /* Peso maggiore per il titolo */
+    font-size: 1.2rem; /* Dimensione più grande */
+    margin-bottom: 10px; /* Spazio sotto il titolo */
+    text-align: center; /* Centra il titolo */
+}
+
+.info-text p {
+    font-size: 1rem; /* Dimensione normale del paragrafo */
+    margin: 0; /* Rimuove margini extra */
+}
+
+
+
+
 /* =========================
    CARD STYLES
 ========================= */
