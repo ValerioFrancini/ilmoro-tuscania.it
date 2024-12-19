@@ -203,9 +203,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //loader
+document.addEventListener("DOMContentLoaded", function () {
+    const preloader = document.getElementById("preloader");
+  
+    // Funzione per mostrare il preloader
+    function showPreloader() {
+      preloader.classList.add("visible");
+    }
+  
+    // Funzione per nascondere il preloader
+    function hidePreloader() {
+      preloader.classList.remove("visible");
+    }
+  
+    // Controlla la velocità della connessione
+    const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    const isSlowConnection =
+      connection &&
+      (connection.effectiveType === "2g" || connection.effectiveType === "slow-2g");
+  
+    let timeout;
+  
+    // Se la connessione è lenta, mostra subito il preloader
+    if (isSlowConnection) {
+      showPreloader();
+    } else {
+      // Altrimenti, usa un timeout per mostrare il preloader solo se il caricamento impiega troppo tempo
+      timeout = setTimeout(showPreloader, 3000); // 3 secondi
+    }
+  
+    // Nascondi il preloader una volta che la pagina è completamente caricata
     window.addEventListener("load", function () {
-        const preloader = document.getElementById("preloader");
-        preloader.classList.add("hidden");
+      clearTimeout(timeout); // Cancella il timeout
+      hidePreloader(); // Nascondi il preloader
     });
-
-
+  });
+  
