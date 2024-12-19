@@ -741,7 +741,7 @@ body {
     /* Stile iniziale per l'animazione */
     opacity: 0; /* Inizia nascosta */
     transform: translate(-50%, 20px); /* Leggero spostamento verso il basso */
-    transition: opacity 4.8s ease, transform 3.8s ease; /* Transizione fluida */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transizione fluida */
   }
 
 /* Stato visibile */
