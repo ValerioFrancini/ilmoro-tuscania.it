@@ -187,3 +187,25 @@ document.querySelectorAll('.menu-list a').forEach(link => {
     });
 });
 
+//menubar FADEIN
+document.addEventListener("DOMContentLoaded", function () {
+    const navigationCard = document.querySelector(".navigation-card");
+    if (navigationCard) {
+        navigationCard.classList.add("fade-in"); // Aggiunge la classe per il fade-in
+        setTimeout(() => {
+            navigationCard.classList.add("visible"); // Aggiunge lo stato visibile
+        }, 500); // Delay di 500ms prima che il menu appaia
+    }
+});
+
+
+
+
+
+//loader
+    window.addEventListener("load", function () {
+        const preloader = document.getElementById("preloader");
+        preloader.classList.add("hidden");
+    });
+
+

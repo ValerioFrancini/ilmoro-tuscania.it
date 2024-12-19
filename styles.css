@@ -797,7 +797,18 @@ body {
     box-shadow: 0 4px 8px #6a4756df;
     border: 1px solid #0000006f;
     z-index: 1000;
+
+    /* Stile iniziale per l'animazione */
+    opacity: 0; /* Inizia nascosta */
+    transform: translate(-50%, 20px); /* Leggero spostamento verso il basso */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Transizione fluida */
   }
+
+/* Stato visibile */
+.navigation-card.visible {
+    opacity: 1; /* Completamente visibile */
+    transform: translate(-50%, 0); /* Torna alla posizione originale */
+}
   
   .tab {
     display: flex;
@@ -868,6 +879,7 @@ body {
         margin-top: 2px;
     }
   }
+
 
 
 
@@ -1005,6 +1017,68 @@ body {
     font-size: 20px;
     color: #333;
     cursor: pointer;
+}
+
+
+
+
+
+/* Preloader container */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5; /* Sfondo del loader */
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+/* Nascosto dopo il caricamento */
+#preloader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Loader circles */
+.loader {
+    display: flex;
+    gap: 12px;
+}
+
+.loader .circle {
+    width: 10px;
+    height: 10px;
+    background-color: #fba13c; /* Colore primario */
+    border-radius: 50%;
+    animation: bounce 1.2s infinite ease-in-out;
+}
+
+/* Animazione ritardata per ogni cerchio */
+.loader .circle:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.loader .circle:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.loader .circle:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+/* Keyframes per il rimbalzo */
+@keyframes bounce {
+    0%, 80%, 100% {
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(1);
+    }
 }
 
 
