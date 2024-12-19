@@ -197,66 +197,6 @@ body {
 
 
 
-
-/* =========================
-   MENU ORIZZONTALE MODERNO
-   ========================= */
-   .horizontal-menu {
-    display: none; /* display:flex; in realtà */
-    
-    justify-content: center; /* Centra il menu */
-    align-items: center;
-    background-color: #fffdfa; /* Sfondo simile all'header */
-    padding: 10px 0; /* Spaziatura verticale */
-    border-bottom: 1px solid #ddd; /* Leggera linea sotto il menu */
-    z-index: 1000;
-    position: relative; /* Posizionato sopra lo slider */
-    overflow-x: auto; /* Permette lo scorrimento orizzontale */
-    scrollbar-width: none; /* Nasconde la scrollbar nei browser moderni */
-}
-
-.horizontal-menu::-webkit-scrollbar {
-    display: none; /* Nasconde la scrollbar su Webkit (Chrome, Safari) */
-}
-
-.menu-list {
-    display: flex; /* Dispone gli elementi orizzontalmente */
-    list-style: none; /* Rimuove i punti elenco */
-    margin: 0; /* Rimuove i margini */
-    padding: 0; /* Rimuove i padding */
-    gap: 15px; /* Spazio tra i pulsanti */
-}
-
-.menu-list li {
-    flex-shrink: 0; /* Previene la compressione degli elementi */
-}
-
-.menu-list li a {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    text-decoration: none; /* Rimuove la sottolineatura */
-    color: #431907; /* Colore del testo */
-    padding: 10px 20px; /* Spaziatura interna */
-    border-radius: 25px; /* Arrotondamento dei bordi */
-    background-color: #f5f5f5; /* Sfondo dei pulsanti */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.menu-list li a:hover {
-    background-color: #fba13c; /* Colore hover */
-    color: white; /* Colore del testo su hover */
-    transform: scale(1.05); /* Leggero ingrandimento */
-}
-
-.menu-list li a:active {
-    background-color: #ea690c; /* Colore attivo */
-    color: #fff;
-}
-
-
-
-
 /* =========================
    SLIDER STYLES
    ========================= */
@@ -809,6 +749,15 @@ body {
     opacity: 1; /* Completamente visibile */
     transform: translate(-50%, 0); /* Torna alla posizione originale */
 }
+
+/* Navigation card nascosta */
+.navigation-card.hidden {
+    opacity: 0; /* Completamente nascosta */
+    transform: translate(-50%, 20px); /* Leggero spostamento verso il basso */
+    transition: opacity 0.1s ease, transform 0.4s ease; /* Transizione fluida */
+}
+
+
   
   .tab {
     display: flex;

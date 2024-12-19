@@ -170,24 +170,7 @@ window.addEventListener('scroll', handleScroll);
 header.classList.add('visible');
 
 
-
-//nav menu orizzontale
-document.querySelectorAll('.menu-list a').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault(); // Previene il comportamento di default del link
-        const targetId = this.getAttribute('href'); // Ottiene l'ID della sezione di destinazione
-        const targetElement = document.querySelector(targetId);
-
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop - 100, // Scorre fino alla sezione con un offset
-                behavior: 'smooth' // Effetto di scorrimento fluido
-            });
-        }
-    });
-});
-
-//menubar FADEIN
+//navigation-card FADEIN
 document.addEventListener("DOMContentLoaded", function () {
     const navigationCard = document.querySelector(".navigation-card");
     if (navigationCard) {
@@ -197,6 +180,31 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 500); // Delay di 500ms prima che il menu appaia
     }
 });
+
+//navigation-card scompare per non coprire il footer
+document.addEventListener("DOMContentLoaded", () => {
+    const navigationCard = document.querySelector(".navigation-card");
+    const footer = document.querySelector(".footer"); // Selettore del footer
+
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener("scroll", () => {
+        const footerTop = footer.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        // Se il footer è visibile, nascondi la navigation-card
+        if (footerTop <= windowHeight) {
+            navigationCard.classList.add("hidden");
+        } 
+        // Se stiamo risalendo, mostra la navigation-card
+        else if (window.scrollY < lastScrollY) {
+            navigationCard.classList.remove("hidden");
+        }
+
+        lastScrollY = window.scrollY;
+    });
+});
+
 
 
 
