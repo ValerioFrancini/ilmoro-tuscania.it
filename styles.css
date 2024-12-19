@@ -268,7 +268,15 @@ body {
     overflow: hidden;
     border-radius: 10px;
     background-color: #f0f0f0;
-      z-index: 1; /* Aggiungi un valore inferiore per lo z-index dello slider */
+    z-index: 1; /* Aggiungi un valore inferiore per lo z-index dello slider */
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effetto hover sul contenitore */
+.slider-container:hover {
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5); /* Ombra più marcata al passaggio del mouse */
+    transform: scale(1.001); /* Leggero zoom per catturare l'attenzione */
 }
 
 .slider {
