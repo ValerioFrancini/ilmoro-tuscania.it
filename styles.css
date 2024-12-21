@@ -343,8 +343,8 @@ body {
 
 /* Stile del pulsante Airbnb */
 .airbnb-button, .airbnb-button-mobile {
-    background: linear-gradient(180deg, #ff9e43, #ea690c); /* Mantieni il gradiente */
-    color: #fff7e9; /* Testo ''prenota ora'' */
+    background: #ff9e43;
+    color: #fff7e9; /* Testo ''controlla disponibilità'' */
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
