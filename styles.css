@@ -352,9 +352,10 @@ body {
     padding: 12px 30px; /* Aggiusta il padding per un look più pulito */
     border: none; /* Rimuovi il bordo */
     border-radius: 50px; /* Mantieni la stondatura del pulsante */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombra leggera per profondità */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Ombra leggera per profondità */
     transition: background 0.3s ease, transform 0.2s ease;
     text-align: center;
+    border: 0.1px solid #00000026;
 }
 
 /* Hover effect per desktop */
