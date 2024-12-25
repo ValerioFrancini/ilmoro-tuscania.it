@@ -1,0 +1,147 @@
+/* Header */
+.header {
+    display: flex;
+    justify-content: flex-end; /* Allinea i pulsanti a destra */
+    align-items: center;
+    padding: 20px 0px;
+    background-color: #ffffff; /* Colore di sfondo dell'header */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Ombra per separare visivamente l'header */
+    position: fixed; /* Rimane in cima alla pagina */
+    width: 100%; /* Copre tutta la larghezza */
+    top: 0;
+    z-index: 1000;
+}
+
+/* Pulsanti nell'header */
+.header-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Centra i pulsanti verticalmente */
+}
+
+/* Stile per i tre puntini */
+.info-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.info-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Stile per il tasto "X" */
+.close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none; /* Nascondi di default */
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.overlay-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 70%;
+    max-width: 400px;
+}
+
+.overlay-content h2 {
+    margin-bottom: 20px;
+    color: #431907;
+}
+
+.overlay-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.overlay-content li {
+    margin: 10px 0;
+}
+
+.overlay-link {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: #fba13c;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.close-overlay {
+    background: #fba13c;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Contenuto principale */
+.content {
+    margin-top: calc(10px + 60px); /* Altezza dinamica dell'header */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contenitore per titolo e sottotitolo */
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+/* Titolo con icona */
+.title-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Stile per il titolo */
+.welcome-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #431907;
+    margin: 0;
+}
+
+/* Stile per l'icona della mano */
+.hand-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Sottotitolo */
+.welcome-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #5F6A74;
+    margin: 0;
+}
