@@ -1,15 +1,20 @@
+body {
+    background-color: #E1DFD3;
+}
+
 /* Header */
 .header {
     display: flex;
     justify-content: flex-end; /* Allinea i pulsanti a destra */
     align-items: center;
     padding: 20px 0px;
-    background-color: #ffffff; /* Colore di sfondo dell'header */
+    background-color: #E1DFD3; /* Colore di sfondo dell'header */
     position: fixed; /* Rimane in cima alla pagina */
-    width: 100%; /* Copre tutta la larghezza */
-    top: 0;
+    width: 93%; /* Copre tutta la larghezza */
+    top: 10px;
     z-index: 1000;
 }
+
 
 /* Pulsanti nell'header */
 .header-buttons {
@@ -59,15 +64,16 @@
 .overlay-content {
     background: #fff;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 11px;
     text-align: center;
     width: 70%;
     max-width: 400px;
 }
 
 .overlay-content h2 {
+    font-family: poppins, sans-serif;
     margin-bottom: 20px;
-    color: #431907;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .overlay-content ul {
@@ -119,14 +125,15 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-top: 80px;
 }
 
 /* Stile per il titolo */
 .welcome-title {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
+    font-size: 30px;
     font-weight: 700;
-    color: #431907;
+    color: rgba(0, 0, 0, 0.8);
     margin: 0;
 }
 
@@ -139,8 +146,31 @@
 /* Sottotitolo */
 .welcome-subtitle {
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
-    color: #5F6A74;
+    color: rgba(26, 25, 25, 0.7);
     margin: 0;
+    margin-top: 10px;
 }
+
+.CTA-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    gap: 10px;
+}
+
+.cta-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 29px;
+    font-weight: 500;
+    color: rgba(26,25,25,0.9);
+    margin: 0;
+    margin-top: 200px;
+}
+
+
+
+
+

@@ -17,14 +17,14 @@
   
   // Eventi per ogni link nell'overlay
   document.getElementById('whyCheckin').addEventListener('click', () => {
-      alert('Inserire il testo per "Perché devo fare il check-in?" qui.');
+      alert('Sito in manutenzione');
   });
   
   document.getElementById('faq').addEventListener('click', () => {
-      alert('Inserire il testo per "FAQ" qui.');
+      alert('Sito in manutenzione');
   });
   
   document.getElementById('privacyPolicy').addEventListener('click', () => {
-      alert('Inserire il testo per "Privacy Policy" qui.');
+      alert('Sito in manutenzione');
   });
   
