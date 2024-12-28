@@ -172,12 +172,35 @@ body {
 
 
 
+
+/* Contenitore del pulsante ''avanti'' */
+:root {
+    --button-top: 600px; /* Default */
+    --button-right: 130px;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --button-top: 600px; /* Altezza per schermi piccoli */
+        --button-right: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --button-top: 600px; /* Altezza per schermi molto piccoli */
+        --button-right: 70px;
+    }
+}
+
 /* Contenitore del pulsante */
 .flower-container {
-    position: relative; /* Necessario per sovrapporre gli elementi */
+    position: absolute; /* Permette il posizionamento personalizzato */
+    top: var(--button-top); /* Usa la variabile CSS per l'altezza */
+    right: var(--button-right); /* Margine di 16px dal lato destro */
     display: inline-block; /* Mantiene la dimensione minima del contenitore */
-    width: 80px; /* Regola la larghezza del pulsante */
-    height: 80px; /* Regola l'altezza del pulsante */
+    width: 80px; /* Larghezza del pulsante */
+    height: 80px; /* Altezza del pulsante */
     text-decoration: none; /* Rimuove la sottolineatura del link */
 }
 
@@ -194,10 +217,26 @@ body {
     top: 50%; /* Posiziona al centro verticale */
     left: 50%; /* Posiziona al centro orizzontale */
     transform: translate(-50%, -50%); /* Centra esattamente l'immagine */
-    width: 30%; /* Regola la dimensione della freccia */
+    width: 30%; /* Dimensione relativa alla larghezza del contenitore */
     height: auto; /* Mantiene le proporzioni */
     pointer-events: none; /* Disabilita l'interazione con la freccia */
 }
+
+/* Responsività generale (esempio opzionale per il pulsante) */
+@media (max-width: 768px) {
+    .flower-container {
+        width: 90px; /* Riduce leggermente la dimensione del pulsante */
+        height: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    .flower-container {
+        width: 100px; /* Pulsante ancora più piccolo per schermi molto piccoli */
+        height: 100px;
+    }
+}
+
 
 
 
