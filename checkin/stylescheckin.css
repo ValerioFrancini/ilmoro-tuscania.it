@@ -172,13 +172,57 @@ body {
 
 
 
-
-
-
-
-.flower-button {
-    display: none;
+/* Contenitore del pulsante */
+.flower-container {
+    position: relative; /* Necessario per sovrapporre gli elementi */
+    display: inline-block; /* Mantiene la dimensione minima del contenitore */
+    width: 80px; /* Regola la larghezza del pulsante */
+    height: 80px; /* Regola l'altezza del pulsante */
+    text-decoration: none; /* Rimuove la sottolineatura del link */
 }
+
+/* Stile del fiore (sfondo) */
+.button-flower {
+    width: 100%; /* Occupa tutto lo spazio del contenitore */
+    height: 100%; /* Occupa tutto lo spazio del contenitore */
+    display: block; /* Rende l'immagine un elemento a blocco */
+}
+
+/* Stile della freccia (sovrapposta al fiore) */
+.button-arrow {
+    position: absolute; /* Sovrappone la freccia al fiore */
+    top: 50%; /* Posiziona al centro verticale */
+    left: 50%; /* Posiziona al centro orizzontale */
+    transform: translate(-50%, -50%); /* Centra esattamente l'immagine */
+    width: 30%; /* Regola la dimensione della freccia */
+    height: auto; /* Mantiene le proporzioni */
+    pointer-events: none; /* Disabilita l'interazione con la freccia */
+}
+
+
+
+
+
+/*step_1*/
+
+.step {
+    font-family: poppins, sans-serif;
+}
+
+.button_back {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
 
 
 
