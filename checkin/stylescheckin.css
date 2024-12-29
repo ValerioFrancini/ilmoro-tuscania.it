@@ -115,7 +115,7 @@ body {
 .welcome-container {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     text-align: left;
     gap: 10px;
 }
@@ -126,6 +126,7 @@ body {
     align-items: center;
     gap: 10px;
     margin-top: 80px;
+    animation: slideInLeft 0.8s ease-in forwards; /* Animazione */
 }
 
 /* Stile per il titolo */
@@ -143,6 +144,31 @@ body {
     height: 30px;
 }
 
+/* Definizione dell'animazione */
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+        transform: translateX(-400px); /* Partenza spostata a sinistra */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Arriva alla posizione iniziale */
+    }
+}
+
+@keyframes slideInRight {
+    from {
+      opacity: 0;
+        transform: translateX(400px); /* Partenza spostata a sinistra */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Arriva alla posizione iniziale */
+    }
+}
+
+
+
 /* Sottotitolo */
 .welcome-subtitle {
     font-family: 'Poppins', sans-serif;
@@ -151,6 +177,9 @@ body {
     color: rgba(26, 25, 25, 0.7);
     margin: 0;
     margin-top: 10px;
+    opacity: 0;
+    animation: slideInRight 0.8s ease-in forwards; /* Animazione */
+    animation-delay: 500ms;
 }
 
 .CTA-conteiner {
