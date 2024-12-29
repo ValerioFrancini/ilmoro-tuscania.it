@@ -125,7 +125,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 80px;
+    margin-top: 50px;
     animation: slideInLeft 0.8s ease-in forwards; /* Animazione */
 }
 
