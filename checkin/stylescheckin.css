@@ -382,6 +382,100 @@ body {
 
 
 
+/* Contenitore dello step */
+.form-step {
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #F7F3ED;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Indicatore dello step */
+.step-indicator {
+    font-size: 14px;
+    color: #7E7E7E;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Barra di progresso */
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.progress {
+    height: 6px;
+    width: 20%;
+    background-color: #D1D1D1;
+    border-radius: 3px;
+}
+
+.progress.current {
+    background-color: #000;
+}
+
+/* Titolo del form */
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Etichette dei campi */
+form label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #000;
+    display: block;
+}
+
+/* Input */
+form input {
+    width: 90%;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #7E7E7E;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #FFF;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #000;
+}
+
+/* Pulsante Avanti */
+.btn-next {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-next:hover {
+    background-color: #333;
+}
+
+
+
+
+
 
 
 

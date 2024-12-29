@@ -53,6 +53,39 @@
 
 
 
+<div class="form-step" id="step-1">
+    <p class="step-indicator">Step 1 of 5</p>
+    <div class="progress-bar">
+        <div class="progress current"></div>
+        <div class="progress"></div>
+        <div class="progress"></div>
+        <div class="progress"></div>
+        <div class="progress"></div>
+    </div>
+
+    <h2 class="form-title">Inserisci i tuoi dati</h2>
+
+    <form id="form-step-1">
+        <label for="name">Nome e cognome</label>
+        <input type="text" id="name" placeholder="Inserisci il tuo nome" required>
+
+        <label for="birthdate">Data di nascita</label>
+        <input type="date" id="birthdate" required>
+
+        <label for="nationality">Nazionalità</label>
+        <input type="text" id="nationality" placeholder="Inserisci la tua nazionalità" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your email" required>
+
+        <button type="button" class="btn-next" onclick="goToStep(2)">Avanti</button>
+    </form>
+</div>
+
+
+
+
+
 
 
 

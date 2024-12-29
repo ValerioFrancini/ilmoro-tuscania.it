@@ -33,4 +33,32 @@
 
 
 
+
+  let currentStep = 1;
+
+  function goToStep(step) {
+      // Nasconde lo step corrente
+      document.getElementById(`step-${currentStep}`).style.display = 'none';
+  
+      // Mostra il nuovo step
+      document.getElementById(`step-${step}`).style.display = 'block';
+  
+      // Aggiorna lo step corrente
+      currentStep = step;
+  
+      // Aggiorna la barra di progresso
+      const progressElements = document.querySelectorAll('.progress');
+      progressElements.forEach((progress, index) => {
+          if (index < step) {
+              progress.classList.add('current');
+          } else {
+              progress.classList.remove('current');
+          }
+      });
+  }
+  
+
+
+
+
   
