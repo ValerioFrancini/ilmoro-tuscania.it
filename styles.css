@@ -343,7 +343,7 @@ body {
 
 /* Stile del pulsante Airbnb */
 .airbnb-button, .airbnb-button-mobile {
-    background: #ff9e43;
+    background: #fc8e28;
     color: #fff7e9; /* Testo ''controlla disponibilità'' */
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
