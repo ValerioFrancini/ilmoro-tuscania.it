@@ -763,11 +763,11 @@ body {
     align-items: center;
     justify-content: center;
     gap: 40px;
-    background-color: #faf6f8;
+    background-color: #f6f6f8;
     padding: 13px 36px;
-    border-radius: 50px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px #6a4756df;
-    border: 1px solid #0000006f;
+   
     z-index: 1000;
 
     /* Stile iniziale per l'animazione */
