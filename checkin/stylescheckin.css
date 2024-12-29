@@ -167,19 +167,28 @@ body {
     }
 }
 
+@keyframes shrinkText {
+    from {
+        font-size: 24px; /* Partenza spostata a sinistra */
+    }
+    to {
+        font-size: 16px; /* Arriva alla posizione iniziale */
+    }
+}
+
 
 
 /* Sottotitolo */
 .welcome-subtitle {
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 400;
     color: rgba(26, 25, 25, 0.7);
     margin: 0;
     margin-top: 10px;
     opacity: 0;
-    animation: slideInRight 0.8s ease-in forwards; /* Animazione */
-    animation-delay: 500ms;
+    animation: slideInRight 800ms ease-in forwards, shrinkText 1500ms ease-in forwards; /* Animazione */
+    animation-delay: 500ms, 2000ms;
 }
 
 .CTA-conteiner {
