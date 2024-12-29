@@ -275,7 +275,7 @@ body {
     top: 50%; /* Posiziona al centro verticale */
     left: 50%; /* Posiziona al centro orizzontale */
     transform: translate(-50%, -50%); /* Centra esattamente l'immagine */
-    width: 30%; /* Dimensione relativa alla larghezza del contenitore */
+    width: 40%; /* Dimensione relativa alla larghezza del contenitore */
     height: auto; /* Mantiene le proporzioni */
     pointer-events: none; /* Disabilita l'interazione con la freccia */
     opacity: 0;
@@ -342,7 +342,7 @@ body {
         transform: rotate(0deg); /* Partenza */
     }
     to {
-        transform: rotate(360deg); /* Leggera rotazione */
+        transform: rotate(180deg); /* Leggera rotazione */
     }
 }
 
