@@ -4,15 +4,12 @@ body {
 
 /* Header */
 .header {
+    position: relative; /* Per gestire i pulsanti posizionati assolutamente */
     display: flex;
-    justify-content: flex-end; /* Allinea i pulsanti a destra */
     align-items: center;
-    padding: 20px 0px;
-    background-color: #E1DFD3; /* Colore di sfondo dell'header */
-    position: fixed; /* Rimane in cima alla pagina */
-    width: 93%; /* Copre tutta la larghezza */
-    top: 10px;
-    z-index: 1000;
+    justify-content: space-between; /* Spazio tra i pulsanti e altri elementi */
+    padding: 30px 16px; /* Spazio interno */
+    background-color: #f7f3ed00; /* Colore di sfondo */
 }
 
 
@@ -21,6 +18,11 @@ body {
     display: flex;
     gap: 10px;
     align-items: center; /* Centra i pulsanti verticalmente */
+    margin-right: 10px; /* Spazio dal bordo destro */
+    position: absolute;
+    right: 10px; /* Imposta un margine fisso dal bordo destro */
+    top: 50%; /* Centra i pulsanti verticalmente */
+    transform: translateY(-50%); /* Allinea esattamente al centro verticale */
 }
 
 /* Stile per i tre puntini */
@@ -358,7 +360,6 @@ body {
     display: flex;
     justify-content: flex-start; /* Allinea a sinistra */
     align-items: center; /* Centra verticalmente il contenuto */
-    margin: 10px; /* Margine opzionale */
     padding-left: 1px; /* Aggiungi spazio dal bordo sinistro, se necessario */
 }
 
@@ -435,8 +436,10 @@ form label {
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 5px;
+    margin-left: 3px;
     color: #000;
     display: block;
+    text-align: left;
 }
 
 /* Input */
