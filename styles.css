@@ -360,7 +360,7 @@ body {
 
 /* Hover effect per desktop */
 .airbnb-button:hover {
-    background: linear-gradient(180deg, #ea6a0c, #c2500c);
+    background: #ea6a0c;
     transform: translateY(-3px); /* Leggero sollevamento al passaggio del mouse */
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
