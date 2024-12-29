@@ -169,10 +169,21 @@ body {
 
 @keyframes shrinkText {
     from {
-        font-size: 24px; /* Partenza spostata a sinistra */
+        font-size: 24px; 
     }
     to {
-        font-size: 16px; /* Arriva alla posizione iniziale */
+        font-size: 16px;
+    }
+}
+
+@keyframes slideInBottom {
+    from {
+        opacity: 0;
+        tranform: translateY(200px);
+    }
+    to {
+        opacity: 1;
+        transoform: translateY(0);
     }
 }
 
@@ -204,8 +215,11 @@ body {
     font-size: 29px;
     font-weight: 500;
     color: rgba(26,25,25,0.9);
+    opacity: 0;
     margin: 0;
     margin-top: 200px;
+    animation: slideInBottom 800ms ease-in forwards;
+    animation-delay: 2300ms;
 }
 
 
