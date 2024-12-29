@@ -8,8 +8,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Spazio tra i pulsanti e altri elementi */
-    padding: 30px 16px; /* Spazio interno */
+    padding: 10px 16px; /* Spazio interno */
     background-color: #f7f3ed00; /* Colore di sfondo */
+    margin-top: 30px;
 }
 
 
@@ -108,7 +109,7 @@ body {
 
 /* Contenuto principale */
 .content {
-    margin-top: calc(10px + 60px); /* Altezza dinamica dell'header */
+    margin-top: 0;
     padding: 20px;
     text-align: center;
 }
