@@ -266,7 +266,7 @@ body {
     width: 100%; /* Occupa tutto lo spazio del contenitore */
     height: 100%; /* Occupa tutto lo spazio del contenitore */
     display: block; /* Rende l'immagine un elemento a blocco */
-    animation: growFlower 1s ease-out 2.5s forwards, slowRotateFlower 3s linear 3.5s infinite;
+    animation: growFlower 1s ease-out 2.5s forwards, infiniteRotateFlower 8s linear 3.5s infinite;
 }
 
 /* Stile della freccia (sovrapposta al fiore) */
@@ -337,12 +337,12 @@ body {
 }
 
 /* Rotazione lenta continua */
-@keyframes slowRotateFlower {
+@keyframes infiniteRotateFlower {
     from {
         transform: rotate(0deg); /* Partenza */
     }
     to {
-        transform: rotate(10deg); /* Leggera rotazione */
+        transform: rotate(360deg); /* Leggera rotazione */
     }
 }
 
