@@ -34,31 +34,38 @@
 
 
 
-  let currentStep = 1;
-
   function goToStep(step) {
-      // Nasconde lo step corrente
-      document.getElementById(`step-${currentStep}`).style.display = 'none';
-  
-      // Mostra il nuovo step
-      document.getElementById(`step-${step}`).style.display = 'block';
-  
-      // Aggiorna lo step corrente
-      currentStep = step;
-  
-      // Aggiorna la barra di progresso
-      const progressElements = document.querySelectorAll('.progress');
-      progressElements.forEach((progress, index) => {
-          if (index < step) {
-              progress.classList.add('current');
-          } else {
-              progress.classList.remove('current');
-          }
-      });
-  }
-  
+    console.log(`Navigating from step ${currentStep} to step ${step}`);
+    const currentStepElement = document.getElementById(`step-${currentStep}`);
+    const nextStepElement = document.getElementById(`step-${step}`);
 
+    if (!currentStepElement) {
+        console.error(`Current step element (#step-${currentStep}) not found.`);
+        return;
+    }
 
+    if (!nextStepElement) {
+        console.error(`Next step element (#step-${step}) not found.`);
+        return;
+    }
 
+    // Nascondi lo step corrente
+    currentStepElement.classList.add('hidden');
+    console.log(`Step ${currentStep} hidden.`);
 
-  
+    // Mostra il nuovo step
+    nextStepElement.classList.remove('hidden');
+    console.log(`Step ${step} shown.`);
+
+    // Aggiorna la barra di progresso
+    const progressElements = document.querySelectorAll('.progress');
+    progressElements.forEach((progress, index) => {
+        if (index < step) {
+            progress.classList.add('current');
+        } else {
+            progress.classList.remove('current');
+        }
+    });
+
+    currentStep = step;
+}

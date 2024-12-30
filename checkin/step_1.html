@@ -44,6 +44,7 @@
 
 
     </header>
+    
 
 
 
@@ -51,7 +52,17 @@
     <!-- contenuto pagina -->
  <main class="content">
 
-
+    <div id="infoOverlay" class="overlay">
+        <div class="overlay-content">
+            <h2>Informazioni</h2>
+            <ul>
+                <li><button id="whyCheckin">Perché devo fare il check-in?</button></li>
+                <li><button id="faq">FAQ</button></li>
+                <li><button id="privacyPolicy">Privacy Policy</button></li>
+            </ul>
+            <button id="closeOverlay">Chiudi</button>
+        </div>
+    </div>
 
 
 
@@ -83,6 +94,26 @@
         <button type="button" class="btn-next" onclick="goToStep(2)">Avanti</button>
     </form>
 </div>
+
+
+
+
+
+<div class="form-step hidden" id="step-2">
+    <p class="step-indicator">Step 2 of 5</p>
+    <!-- Progress bar remains the same -->
+    <div class="progress-bar">
+        <!-- Same structure as above -->
+    </div>
+    <h2 class="form-title">Inserisci i tuoi contatti</h2>
+    <!-- Campi e pulsanti specifici per Step 2 -->
+    <form id="form-step-2">
+        <!-- Aggiungi i campi necessari -->
+        <button type="button" onclick="goToStep(1)">Indietro</button>
+        <button type="button" onclick="goToStep(3)">Avanti</button>
+    </form>
+</div>
+
 
 
 

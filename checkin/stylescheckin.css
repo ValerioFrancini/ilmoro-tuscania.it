@@ -354,7 +354,11 @@ body {
 
 
 
-/*step_1*/
+/*step*/
+
+.hidden {
+    display: none;
+}
 
 
 .back-button {
