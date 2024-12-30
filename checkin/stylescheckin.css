@@ -52,13 +52,13 @@ body {
 
 /* Overlay */
 .overlay {
+    display: none; /* Nascondi di default */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
-    display: none; /* Nascondi di default */
     justify-content: center;
     align-items: center;
     z-index: 2000;
@@ -396,6 +396,12 @@ body {
     background-color: #F7F3ED;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.form-step:not(.hidden) {
+    opacity: 1;
 }
 
 /* Indicatore dello step */
@@ -481,6 +487,24 @@ form input:focus {
 
 .btn-next:hover {
     background-color: #333;
+}
+
+.btn-back {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #D32F2F; /* Rosso per un'azione distruttiva */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-back:hover {
+    background-color: #B71C1C; /* Rosso più scuro per il hover */
 }
 
 
