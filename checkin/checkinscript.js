@@ -34,38 +34,38 @@
 
 
 
-  function goToStep(step) {
-    console.log(`Navigating from step ${currentStep} to step ${step}`);
-    const currentStepElement = document.getElementById(`step-${currentStep}`);
-    const nextStepElement = document.getElementById(`step-${step}`);
+  let currentStep = 1; // Variabile per tenere traccia dello step corrente
 
-    if (!currentStepElement) {
-        console.error(`Current step element (#step-${currentStep}) not found.`);
-        return;
-    }
+document.addEventListener('DOMContentLoaded', () => {
+    // Funzione per navigare tra gli step
+    window.goToStep = function (step) {
+        console.log(`Attempting to navigate to step ${step}`);
 
-    if (!nextStepElement) {
-        console.error(`Next step element (#step-${step}) not found.`);
-        return;
-    }
+        // Elementi degli step
+        const currentStepElement = document.getElementById(`step-${currentStep}`);
+        const nextStepElement = document.getElementById(`step-${step}`);
 
-    // Nascondi lo step corrente
-    currentStepElement.classList.add('hidden');
-    console.log(`Step ${currentStep} hidden.`);
-
-    // Mostra il nuovo step
-    nextStepElement.classList.remove('hidden');
-    console.log(`Step ${step} shown.`);
-
-    // Aggiorna la barra di progresso
-    const progressElements = document.querySelectorAll('.progress');
-    progressElements.forEach((progress, index) => {
-        if (index < step) {
-            progress.classList.add('current');
-        } else {
-            progress.classList.remove('current');
+        // Controlla se gli elementi esistono
+        if (!currentStepElement || !nextStepElement) {
+            console.error(`Step element not found: step-${currentStep} or step-${step}`);
+            return;
         }
-    });
 
-    currentStep = step;
-}
+        // Nascondi lo step corrente e mostra il nuovo step
+        currentStepElement.classList.add('hidden');
+        nextStepElement.classList.remove('hidden');
+
+        // Aggiorna la barra di progresso
+        const progressElements = document.querySelectorAll('.progress');
+        progressElements.forEach((progress, index) => {
+            if (index < step) {
+                progress.classList.add('current');
+            } else {
+                progress.classList.remove('current');
+            }
+        });
+
+        // Aggiorna lo step corrente
+        currentStep = step;
+    };
+});
