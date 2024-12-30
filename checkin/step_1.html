@@ -22,14 +22,7 @@
 
 
     <header class="header">
-
-        <div class="back-button">
-            <button class="button_back" onclick="window.location.href='check-in.html'">
-               <img src="icone/button_back.svg" alt="indietro" class="back-icon">
-            </button>
-        </div>
-        
-
+    
         <div class="header-buttons">
             <!-- Pulsante con i tre puntini -->
             <button class="info-button" id="infoButton">
@@ -114,8 +107,10 @@
         <label for="phone">Telefono</label>
         <input type="tel" id="phone" placeholder="Inserisci il tuo numero di telefono" required>
 
-        <button type="button" class="btn-next" onclick="goToStep(3)">Avanti</button>
+        <div class="button-container">
         <button type="button" class="btn-back" onclick="goToStep(1)">Indietro</button>
+        <button type="button" class="btn-next" onclick="goToStep(3)">Avanti</button>
+    </div>
     </form>
 </div>
 
