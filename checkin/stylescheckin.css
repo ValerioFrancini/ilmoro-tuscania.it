@@ -426,6 +426,7 @@ body {
     width: 19%;
     background-color: #D1D1D1;
     border-radius: 3px;
+    transition: background-color 0.3s ease;
 }
 
 .progress.current {
