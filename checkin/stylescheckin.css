@@ -528,7 +528,7 @@ form input:focus {
 }
 
 .back-icon:hover {
-    transform: scale(1.1); /* Ingrandisce leggermente l'icona al passaggio del mouse */
+    transform: scale(1.03); /* Ingrandisce leggermente l'icona al passaggio del mouse */
 }
 
 
