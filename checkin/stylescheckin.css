@@ -521,6 +521,17 @@ form input:focus {
     gap: 10px;
 }
 
+.back-icon {
+    width: 48px; /* Larghezza dell'icona */
+    height: 48px; /* Altezza dell'icona */
+    vertical-align: middle; /* Allinea l'icona al centro verticale */
+}
+
+.back-icon:hover {
+    transform: scale(1.1); /* Ingrandisce leggermente l'icona al passaggio del mouse */
+}
+
+
 
 
 
