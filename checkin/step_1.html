@@ -52,18 +52,18 @@
     <!-- contenuto pagina -->
  <main class="content">
 
-    <div class="overlay" id="infoOverlay">
-        <div class="overlay-content">
-            <h2>Informazioni</h2>
-            <ul>
-                <li><button id="whyCheckin">Perché devo fare il check-in?</button></li>
-                <li><button id="faq">FAQ</button></li>
-                <li><button id="privacyPolicy">Privacy Policy</button></li>
-            </ul>
-            <button id="closeOverlay">Chiudi</button>
-        </div>
+    <!-- Overlay per le informazioni -->
+<div class="overlay" id="infoOverlay">
+    <div class="overlay-content">
+        <h2>Informazioni</h2>
+        <ul>
+            <li><button class="overlay-link" id="whyCheckin">Perché devo fare il check-in?</button></li>
+            <li><button class="overlay-link" id="faq">FAQ</button></li>
+            <li><button class="overlay-link" id="privacyPolicy">Privacy Policy</button></li>
+        </ul>
+        <button class="close-overlay" id="closeOverlay">Chiudi</button>
     </div>
-
+</div>
 
 
 <div class="form-step" id="step-1">
@@ -101,25 +101,21 @@
 
 <div class="form-step hidden" id="step-2">
     <p class="step-indicator">Step 2 of 5</p>
-    <!-- Progress bar remains the same -->
     <div class="progress-bar">
-            <div class="progress current"></div>
-            <div class="progress"></div>
-            <div class="progress"></div>
-            <div class="progress"></div>
-            <div class="progress"></div>
+        <div class="progress"></div> <!-- Step 1 -->
+        <div class="progress"></div> <!-- Step 2 -->
+        <div class="progress"></div> <!-- Step 3 -->
+        <div class="progress"></div> <!-- Step 4 -->
+        <div class="progress"></div> <!-- Step 5 -->
     </div>
     <h2 class="form-title">Inserisci i tuoi contatti</h2>
     <!-- Campi e pulsanti specifici per Step 2 -->
     <form id="form-step-2">
-        <label for="name">Nome e cognome</label>
-        <input type="text" id="name" placeholder="Inserisci il tuo nome" required>
+        <label for="phone">Telefono</label>
+        <input type="tel" id="phone" placeholder="Inserisci il tuo numero di telefono" required>
 
-        
-
-        <button type="button" class="btn-next" onclick="goToStep(2)">Avanti</button>
+        <button type="button" class="btn-next" onclick="goToStep(3)">Avanti</button>
         <button type="button" class="btn-back" onclick="goToStep(1)">Indietro</button>
-
     </form>
 </div>
 
