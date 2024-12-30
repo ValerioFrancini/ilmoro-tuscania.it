@@ -28,6 +28,7 @@
       alert('Sito in manutenzione');
   });
   
+  console.log(infoOverlay.style);
 
 
 
