@@ -40,13 +40,9 @@ const totalSteps = 5; // Numero totale di step
 document.addEventListener('DOMContentLoaded', () => {
     // Funzione per navigare tra gli step
     window.goToStep = function (step) {
-        // Evita transizioni non valide
-        if (step < 1 || step > totalSteps) {
-            console.error(`Invalid step: ${step}`);
-            return;
-        }
-
-        console.log(`Attempting to navigate to step ${step}`);
+     
+       
+    
 
         // Elementi degli step
         const currentStepElement = document.getElementById(`step-${currentStep}`);
@@ -75,13 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateProgressBar(step) {
         const progressElements = document.querySelectorAll('.progress');
         progressElements.forEach((progress, index) => {
-            if (index < step) {
-                progress.classList.add('current');
-            } else {
-                progress.classList.remove('current');
-            }
         });
     }
+    
     
 
     // Eventuale inizializzazione (puoi richiamarla per configurare la barra iniziale)
