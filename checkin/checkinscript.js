@@ -79,3 +79,51 @@ document.addEventListener('DOMContentLoaded', () => {
     // Eventuale inizializzazione (puoi richiamarla per configurare la barra iniziale)
     updateProgressBar(currentStep);
 });
+
+
+
+
+
+
+//gestisce la chiusura del form per il checkin controllando se sono stati inseriti dei dati
+
+let formModified = false; // Variabile per tracciare se i dati sono stati modificati
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Rileva modifiche nei form
+    const inputs = document.querySelectorAll('input'); // Selettore per tutti i campi input
+    inputs.forEach(input => {
+        input.addEventListener('input', () => {
+            formModified = true; // Imposta la variabile a true quando l'utente modifica qualcosa
+        });
+    });
+
+    // Aggiungi eventi al modale
+    const confirmModal = document.getElementById('confirmModal');
+    const cancelButton = document.querySelector('.confirm-cancel');
+    const confirmButton = document.querySelector('.confirm-confirm');
+
+    // Funzione per chiudere il modale
+    const closeModal = () => {
+        confirmModal.classList.add('hidden');
+    };
+
+    // Annulla chiusura pagina
+    cancelButton.addEventListener('click', closeModal);
+
+    // Conferma chiusura pagina
+    confirmButton.addEventListener('click', () => {
+        window.location.href = '/index.html';
+    });
+
+    // Funzione per gestire la chiusura della pagina
+    window.confirmClosePage = function () {
+        if (formModified) {
+            // Mostra il modale
+            confirmModal.classList.remove('hidden');
+        } else {
+            // Nessun dato modificato, chiudi direttamente
+            window.location.href = '/index.html';
+        }
+    };
+});

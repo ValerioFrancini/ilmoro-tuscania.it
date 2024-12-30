@@ -536,5 +536,102 @@ form input:focus {
 
 
 
+/* Contenitore del modale di chiusura della scheda check-in */
+/* Contenitore del modale */
+.confirm-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Sfondo semi-trasparente */
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+    z-index: 1000;
+    transition: opacity 0.3s ease; /* Transizione di comparsa */
+}
+
+/* Aggiungi una classe per un'animazione di fade-in */
+.confirm-modal.show {
+    opacity: 1;
+}
+
+.confirm-modal.hidden {
+    opacity: 0;
+    pointer-events: none; /* Disabilita il click quando è nascosto */
+}
+
+/* Contenuto del modale */
+.confirm-modal-content {
+    background: #F7F3ED; /* Colore di sfondo della card */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Larghezza massima per schermi grandi */
+    width: 80%; /* Larghezza adattabile per schermi piccoli */
+    text-align: center;
+    animation: scaleIn 0.3s ease; /* Animazione di ingrandimento */
+}
+
+/* Effetto di zoom */
+@keyframes scaleIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Messaggio */
+.confirm-message {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Pulsanti */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.confirm-cancel, .confirm-confirm {
+    width: 48%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.confirm-cancel {
+    background-color: #D32F2F;
+    color: #FFF;
+}
+
+.confirm-cancel:hover {
+    background-color: #B71C1C;
+    transform: scale(1.05);
+}
+
+.confirm-confirm {
+    background-color: #000;
+    color: #FFF;
+}
+
+.confirm-confirm:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+
 
 

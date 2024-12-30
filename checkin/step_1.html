@@ -30,9 +30,12 @@
             </button>
     
             <!-- Tasto per chiudere la pagina -->
-            <button class="close-button" onclick="window.location.href='/index.html'">
+            <button class="close-button" onclick="confirmClosePage()">
                 <img src="icone/xclose.svg" alt="close" class="close-icon">
             </button>
+            
+
+
         </div>
 
 
@@ -44,6 +47,19 @@
 
     <!-- contenuto pagina -->
  <main class="content">
+
+          <!-- Modale di conferma -->
+          <div class="confirm-modal hidden" id="confirmModal">
+            <div class="confirm-modal-content">
+                <p class="confirm-message">
+                    Hai dei dati non salvati. Se chiudi la pagina, perderai tutte le informazioni inserite. Vuoi continuare?
+                </p>
+                <div class="button-container">
+                    <button class="btn-back confirm-cancel">Annulla</button>
+                    <button class="btn-next confirm-confirm">Conferma</button>
+                </div>
+            </div>
+        </div>
 
     <!-- Overlay per le informazioni -->
 <div class="overlay" id="infoOverlay">
