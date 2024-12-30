@@ -74,17 +74,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Funzione per aggiornare la barra di progresso
     function updateProgressBar(step) {
         const progressElements = document.querySelectorAll('.progress');
-
-        console.log(`Updating progress bar for step ${step}`);
         progressElements.forEach((progress, index) => {
-            console.log(`Progress element ${index + 1}:`, progress);
             if (index < step) {
-                progress.classList.add('current'); // Evidenzia gli step completati o attivi
+                progress.classList.add('current');
             } else {
-                progress.classList.remove('current'); // Rimuove lo stato dagli step successivi
+                progress.classList.remove('current');
             }
         });
     }
+    
 
     // Eventuale inizializzazione (puoi richiamarla per configurare la barra iniziale)
     updateProgressBar(currentStep);
