@@ -429,7 +429,7 @@ body {
 .progress {
     height: 6px;
     width: 19%;
-    background-color: #D1D1D1;
+    background-color: #aeaeae;
     border-radius: 3px;
     transition: background-color 0.3s ease;
 }
