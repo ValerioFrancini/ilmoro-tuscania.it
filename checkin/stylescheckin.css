@@ -393,9 +393,8 @@ body {
     padding: 20px;
     max-width: 400px;
     margin: 0 auto;
-    background-color: #F7F3ED;
+    background-color: #E1DFD3; /* SFONDO CARD */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
