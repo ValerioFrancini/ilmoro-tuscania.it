@@ -842,7 +842,7 @@ body {
   @media (max-width: 768px) {
     .navigation-card {
       gap: 34px; /* Riduce lo spazio tra i tab */
-      padding: 13px 35px;
+      padding: 17px 39px;
     }
   
     .tab {
@@ -851,8 +851,8 @@ body {
     }
   
     .svgIcon {
-      width: 32px;
-      height: 32px;
+      width: 39px;
+      height: 39px;
     }
 
     .tab-label {
