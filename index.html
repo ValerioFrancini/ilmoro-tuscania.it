@@ -168,10 +168,10 @@
       <img src="icone/user.svg" alt="Check-in" class="svgIcon">
       <span class="tab-label">Check-in</span>
 
-<!-- Pulsante Check-in che apre il widget -->
-<a href="#" class="tab" aria-label="Check-in"
+<!-- Pulsante Check-in che apre e chiude il widget -->
+<a href="#" id="checkinBtn" class="tab" aria-label="Check-in"
    data-openwidget-action="maximize" 
-   data-openwidget-feature="chat">   <!-- Aggiungi questa funzionalità se desideri -->
+   data-openwidget-feature="chat">
   <img src="icone/help.svg" alt="Check-in" class="svgIcon">
   <span class="tab-label">Check-in</span>
 </a>
@@ -188,18 +188,34 @@
     var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[OpenWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0;n.type="text/javascript",n.src="https://cdn.openwidget.com/openwidget.js",t.head.appendChild(n)}};
     !n.__ow.asyncInit&&e.init(),n.OpenWidget=n.OpenWidget||e}(window,document,[].slice));
 
+  // Variabile per tracciare lo stato del widget (aperto/chiuso)
+  let isWidgetOpen = false;
+
   // Aggiungi evento di clic per il pulsante Check-in
-  document.querySelector('[data-openwidget-action="maximize"]').addEventListener("click", function(e) {
+  document.getElementById("checkinBtn").addEventListener("click", function(e) {
     e.preventDefault();  // Evita che il link faccia il suo comportamento predefinito
-    if (window.OpenWidget) {
-      window.OpenWidget.call('maximize');  // Apre il widget al massimo
+
+    if (isWidgetOpen) {
+      // Se il widget è già aperto, lo chiudiamo
+      if (window.OpenWidget) {
+        window.OpenWidget.call('minimize');  // Minimizza il widget
+      }
+    } else {
+      // Se il widget è chiuso, lo apriamo
+      if (window.OpenWidget) {
+        window.OpenWidget.call('maximize');  // Apre il widget al massimo
+      }
     }
+
+    // Inverti lo stato del widget
+    isWidgetOpen = !isWidgetOpen;
   });
 </script>
+
 <noscript>You need to <a href="https://www.openwidget.com/enable-javascript" rel="noopener nofollow">enable JavaScript</a> to use the communication tool powered by <a href="https://www.openwidget.com/" rel="noopener nofollow" target="_blank">OpenWidget</a></noscript>
 <!-- End of OpenWidget code -->
+
 </div>
-  
   
 
 
