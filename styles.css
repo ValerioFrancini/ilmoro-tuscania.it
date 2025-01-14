@@ -3,7 +3,7 @@
    ========================= */
 body {
     margin-top: 107px; /* Modifica questo valore in base all'altezza effettiva del tuo header */
-    background-color: #fffdfa;
+    background-color: #eeede5;
 }
 
 /* =========================
@@ -13,7 +13,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Distribuisce il logo e il titolo correttamente */
-    background-color: #fffdfa;
+    background-color: #eeede5;
     border-radius: 5px; 
     position: fixed;
     top: 0; /* Posiziona l'header in cima alla pagina */
@@ -763,7 +763,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 40px;
-    background-color: #f6f6f8;
+    background-color: #fcfbf9;
     padding: 13px 36px;
     border-radius: 20px;
     box-shadow: 0 4px 8px #6a4756df;
