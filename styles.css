@@ -6,6 +6,16 @@ body {
     background-color: #eeede5;
 }
 
+
+/* Personalizzazione del banner dei cookie di Cookiebot */
+
+#cookieConsent {
+    border-radius: 20px; /* Bordi stondati */
+    padding: 20px; /* Distanza tra il contenuto e il bordo */
+    font-family: 'Poppins', sans-serif; /* Font personalizzato */
+}
+
+
 /* =========================
    HEADER & LOGO STYLES
    ========================= */
